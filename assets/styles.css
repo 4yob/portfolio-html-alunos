@@ -286,3 +286,107 @@ span {
     width: calc(100% + 8px); /* Define a largura de acordo com o conteúdo */
   }
 }
+
+.heading {
+  font-size: 2rem; /* Define o tamanho da fonte equivalente a 40px */
+  text-align: center; /* Alinha o texto ao centro */
+  margin: 5rem 0; /* Adiciona uma margem */
+}
+
+.education {
+  padding: 100px 15px; /* Adiciona um espaçamento interno */
+  background: var(--secondary-bg-color); /* Define a cor de fundo */
+}
+
+.education h2 {
+  margin-bottom: 5rem; /* Adiciona uma margem na parte inferior */
+}
+
+.timeline-items {
+  max-width: 1200px; /* Define a largura máxima */
+  margin: auto; /* Adiciona uma margem automática */
+  display: flex; /* Faz com que os elementos fiquem em linha */
+  flex-wrap: wrap; /* Quebra a linha quando não há espaço */
+  position: relative; /* Define a posição relativa */
+}
+
+.timeline-items::before {
+  /* Adiciona um pseudo-elemento */
+  content: ""; /* Adiciona um conteúdo vazio */
+  position: absolute; /* Define a posição absoluta */
+  width: 5px; /* Define a largura */
+  height: 100%; /* Define a altura */
+  background-color: var(--main-color); /* Define a cor de fundo */
+  left: calc(50% - 1px); /* Define a distância da esquerda */
+  top: 0; /* Define a distância do topo */
+  transform: translateX(-50%); /* Adiciona um efeito de translação */
+}
+
+.timeline-item {
+  margin-bottom: 40px; /* Adiciona uma margem */
+  width: 100%; /* Define a largura */
+  position: relative; /* Define a posição relativa */
+}
+
+.timeline-item:last-child {
+  /* Seleciona o último elemento */
+  margin-bottom: 0; /* Remove a margem */
+}
+
+.timeline-item:nth-child(odd) {
+  /* Seleciona os elementos ímpares */
+  padding-right: calc(50% + 30px); /* Adiciona um espaçamento à direita */
+  text-align: right; /* Alinha o texto à direita */
+}
+
+.timeline-item:nth-child(even) {
+  /* Seleciona os elementos pares */
+  padding-left: calc(50% + 30px); /* Adiciona um espaçamento à esquerda */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.timeline-dot {
+  height: 21px; /* Define a altura */
+  width: 21px; /* Define a largura */
+  background-color: var(--main-color); /* Define a cor de fundo */
+  box-shadow: 0 0 20px var(--main-color), 0 0 30px var(--main-color); /* Adiciona uma sombra */
+  position: absolute; /* Define a posição absoluta */
+  left: calc(50% - 11px); /* Define a distância da esquerda */
+  border-radius: 50%; /* Adiciona um raio nas bordas */
+}
+
+.timeline-date {
+  font-size: 1.6rem; /* Define o tamanho da fonte equivalente a 16px */
+  font-weight: 800; /* Define o peso da fonte */
+  color: var(--text-color); /* Define a cor do texto */
+  margin: 0 0 15px; /* Adiciona uma margem */
+}
+
+.timeline-content {
+  background: var(--bg-color); /* Define a cor de fundo */
+  border: 1px solid var(--main-color); /* Adiciona uma borda */
+  padding: 30px 50px; /* Adiciona um espaçamento interno */
+  border-radius: 5px; /* Adiciona um raio nas bordas */
+  box-shadow: 0 0 10px var(--main-color); /* Adiciona uma sombra */
+  cursor: pointer; /* Adiciona um cursor de ponteiro */
+  transition: 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
+
+.timeline-content:hover {
+  transform: scale(1.05); /* Adiciona um efeito de escala */
+  box-shadow: 0 0 20px var(--main-color); /* Adiciona uma sombra */
+}
+
+.timeline-content h3 {
+  font-size: 1.6rem; /* Define o tamanho da fonte equivalente a 16px */
+  font-weight: 600; /* Define o peso da fonte */
+  color: var(--text-color); /* Define a cor do texto */
+  margin: 0 0 10px; /* Adiciona uma margem */
+}
+
+.timeline-content p {
+  font-size: 1.2rem; /* Define o tamanho da fonte equivalente a 16px */
+  font-weight: 300; /* Define o peso da fonte */
+  color: var(--text-color); /* Define a cor do texto */
+  line-height: 1.2; /* Define a altura da linha */
+}
