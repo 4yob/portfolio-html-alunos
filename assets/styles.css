@@ -390,3 +390,19 @@ span {
   color: var(--text-color); /* Define a cor do texto */
   line-height: 1.2; /* Define a altura da linha */
 }
+
+::-webkit-scrollbar {
+  /* Adiciona um estilo à barra de rolagem */
+  width: 6px; /* Define a largura */
+}
+
+::-webkit-scrollbar-thumb {
+  /* Adiciona um estilo ao polegar da barra de rolagem */
+  background-color: var(--main-color); /* Define a cor de fundo */
+  border-radius: 5px; /* Adiciona um raio nas bordas */
+}
+
+::-webkit-scrollbar-track {
+  /* Adiciona um estilo à trilha da barra de rolagem */
+  background-color: var(--bg-color); /* Define a cor de fundo */
+}
