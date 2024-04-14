@@ -107,7 +107,7 @@ span {
 }
 
 .home-content h1 {
-  font-size: 4rem; /* Define o tamanho da fonte equivalente a 112px */
+  font-size: 3rem; /* Define o tamanho da fonte equivalente a 112px */
   font-weight: 700; /* Define o peso da fonte */
   margin-top: 1.5rem; /* Adiciona uma margem na parte superior */
   line-height: 1; /* Define a altura da linha */
@@ -320,6 +320,7 @@ span {
   left: calc(50% - 1px); /* Define a distância da esquerda */
   top: 0; /* Define a distância do topo */
   transform: translateX(-50%); /* Adiciona um efeito de translação */
+  border-radius: 5px; /* Adiciona um raio nas bordas */
 }
 
 .timeline-item {
