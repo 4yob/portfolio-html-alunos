@@ -12,7 +12,7 @@
 :root {
   --bg-color: #080808; /* Define a cor de fundo do projeto */
   --secondary-bg-color: #121212; /* Define a cor de fundo secundária do projeto */
-  --text-color: #fff; /* Define a cor do texto do projeto */
+  --text-color: #e4e4e4; /* Define a cor do texto do projeto */
   --main-color: #00ffee; /* Define a cor principal do projeto */
 }
 
@@ -406,4 +406,64 @@ span {
 ::-webkit-scrollbar-track {
   /* Adiciona um estilo à trilha da barra de rolagem */
   background-color: var(--bg-color); /* Define a cor de fundo */
+}
+
+.services {
+  background-color: var(--bg-color);
+  color: var(--secondary-bg-color);
+}
+
+.services h2 {
+  margin-bottom: 5rem;
+  color: var(--text-color);
+}
+
+.services-container {
+  display: grid; /* Faz com que os elementos fiquem em grid */
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Define o número de colunas repetidas */
+  align-items: center;
+  gap: 2.5rem; /* Adiciona um espaçamento entre os elementos */
+}
+
+.service-box {
+  background-color: var(--main-color);
+  height: 300px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.service-box:hover {
+  background: var(--text-color);
+  color: var(--bg-color);
+  border: 3px solid var(--main-color);
+  transform: scale(1.01);
+}
+
+.service-box .service-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-height: 200px;
+  justify-content: left;
+  align-items: baseline;
+  padding: 4rem 4rem;
+}
+
+.service-info h4 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.service-info p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  max-height: 100px;
+  line-height: 1.6;
+  margin: auto;
 }
