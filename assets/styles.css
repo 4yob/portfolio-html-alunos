@@ -537,3 +537,46 @@ span {
   color: gold;
   font-size: 1.4rem;
 }
+
+.contact {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding-left: 40rem;
+  padding-right: 40rem;
+}
+
+.contact h2 {
+  margin-bottom: 3rem;
+  color: var(--text-color);
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  background: var(--secondary-bg-color);
+  border-radius: 5px;
+  border: 3px solid var(--main-color);
+  margin: 1rem 0;
+  resize: none;
+}
+
+.contact form .btn {
+  padding: 1rem 8rem;
+  margin-top: 1rem;
+}
